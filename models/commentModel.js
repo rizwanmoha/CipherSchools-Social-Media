@@ -16,6 +16,20 @@ const commentSchema = new  mongoose.Schema({
         ref: "Post",
         require: [true, "user id is required"],
       },
+      replies: [ 
+      {
+        content: {
+          type: String,
+          required: [true, "Reply data is required"],
+        },
+        userId: {
+          type: mongoose.Types.ObjectId,
+          ref: "User",
+          
+        },
+       
+      },
+    ]
 
      
 

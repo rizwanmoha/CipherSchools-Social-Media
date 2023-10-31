@@ -1,5 +1,8 @@
 const JWT = require('jsonwebtoken');
 
+// This function will check the token wheather the user is login or not. User is authorized or not
+
+
 exports.requireSignIn = async(req , res , next) =>{
     try{
         

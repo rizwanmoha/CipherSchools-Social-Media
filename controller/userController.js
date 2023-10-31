@@ -4,6 +4,7 @@ const  JWT = require('jsonwebtoken');
 const { hashPassword, comparePassword }  = require('../helper/authHelper.js');
 
 
+// This function is for registering the user
 
 exports.registerController = async (req, res) => {
     try {
@@ -47,6 +48,9 @@ exports.registerController = async (req, res) => {
       })
     }
   }
+
+
+  // This function is used to authenticate and log in the user.
 
   exports.loginController = async (req, res) => {
     try {
